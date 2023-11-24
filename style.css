@@ -1,0 +1,18 @@
+body {
+    margin: 2%;
+    background-color: whitesmoke;
+}
+
+.key {
+    color: blue;
+    font-weight: bold;
+  }
+  .value {
+    color: green;
+  }
+  .string {
+    color: red;
+  }
+  .number {
+    color: purple;
+  }
