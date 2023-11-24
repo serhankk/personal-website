@@ -1,18 +1,40 @@
-body {
-    margin: 2%;
-    background-color: whitesmoke;
+:root {
+    --key-text-color: rgb(39, 39, 219);
+    --string-text-color: red;
+    --number-text-color: purple;
+    --color: rgb(19, 142, 224);
+    --background-color: #EBF3E8;
 }
 
+body {
+    margin: 1 auto;
+    max-width: 100%;
+    color: var(--color);
+    transition: background-color 0.5s ease;
+    background-color: var(--background-color)
+    
+}
+
+body.dark-mode {
+    --background-color: #1E3163;
+    --key-text-color: #a5b0e0;
+    --string-text-color: #F8F8F8;
+    --number-text-color: #b1a6a6;
+    --color: #F037A5;
+}
+
+
 .key {
-    color: blue;
+    color: var(--key-text-color);
     font-weight: bold;
-  }
-  .value {
-    color: green;
-  }
-  .string {
-    color: red;
-  }
-  .number {
-    color: purple;
-  }
+}
+
+.value {
+  color: var(--value-text-color);
+}
+.string {
+  color: var(--string-text-color);
+}
+.number {
+  color: var(--number-text-color);
+}
